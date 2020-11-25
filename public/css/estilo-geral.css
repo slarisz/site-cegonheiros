@@ -32,8 +32,9 @@ p {
     font-size: 20px;
 }
 
-[aria-expanded=true] .fa-caret-down {
+[aria-expanded="true"] .fa-caret-down {
     transform: rotate(180deg);
+    margin-bottom: 2px;
 }
 
 [aria-expanded=true] .dropdown-toggle::after {
@@ -510,7 +511,7 @@ p {
     .login-client {
         margin: 0;
         width: 230px;
-        border-top: 0px solid;
+        border-top: 1px solid;
         padding: 1rem 1rem;
         color: #fff;
     }
@@ -549,6 +550,7 @@ p {
     #client-style .dropdown-toggle::after {
         margin-left: .5em;
         margin-top: 0.3em;
+        display: none;
     }
 
     #sistema .java-type {
@@ -629,3 +631,39 @@ p {
         height: 100%;
     }
 }
+
+/* animations */
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  .animate-up {
+    animation-name: up;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+  }
+
+  @keyframes slideDown {
+    from {
+        opacity: 0;
+        height: 0;
+    }
+    to {
+        opacity: 1;
+        height: 100%;
+    }
+  }
+  
+  .animate-slideDown {
+    animation-name: slideDown;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+  }  
