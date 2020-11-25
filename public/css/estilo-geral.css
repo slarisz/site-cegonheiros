@@ -245,7 +245,7 @@ p {
 }
 
 .text-sistema {
-    padding: 4rem;
+    padding: 3rem 2rem;
 }
 
 #sistema .java-type {
@@ -566,6 +566,10 @@ p {
 
     .nav-footer li {
         display: inline-flex;
+    }
+
+    .text-sistema {
+        padding: 4rem;
     }
 }
 
