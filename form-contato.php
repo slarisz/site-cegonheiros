@@ -1,6 +1,7 @@
 <?php
 
     $destinatario = "larissakd@hotmail.com";
+    $subject = "PORTAL DOS CEGONHEIROS - Email do fale conosco";
 
     $nome = $_REQUEST['nome'];
     $email = $_REQUEST['email'];
@@ -17,8 +18,9 @@
     $body = $body . "Mensagem: " . $mensagem . "\n\n";
     $body = $body . "===================================" . "\n";
 
-    mail($destinatario, $assunto , $body, "From: $email\r\n");
+    mail($destinatario, $subject , $body, "From: $email\n");
 
+    echo "Sua mensagem foi enviada com sucesso";
 
     header('Content-Type: text/html; charset=utf-8; location: index.html/#contato');
 
