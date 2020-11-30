@@ -20,6 +20,6 @@
     mail($destinatario, $assunto , $body, "From: $email\r\n");
 
 
-    header("location: index.html#contato");
+    header("location: index.html/#contato");
 
 ?>
