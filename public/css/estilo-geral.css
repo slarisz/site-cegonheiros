@@ -135,7 +135,7 @@ p {
 #nav-bar-dk {
     padding: 20px 30px;
     position: absolute;
-    top: 76px;
+    top: 100%;
     background-color: #840004;
     width: 100%;
     left: 0;
@@ -589,6 +589,7 @@ p {
 }
 
 @media (max-width: 992px) {
+    
     .logo-dk {
         display: none;
     }
@@ -597,7 +598,14 @@ p {
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 400px) {
+    #menu-web .navbar-brand {
+        margin: 0px;
+        width: 75%;
+    }
+}
+
+@media (max-width: 350px) {    
     .about-blocks {
         display: block;
         margin: 0rem auto 1.5rem;
