@@ -240,6 +240,11 @@ p {
     max-width: 100%;
 }
 
+#sistema .logo-java {
+    width: 150px;
+
+}
+
 #sistema .col-md-6 {
     padding: 0px;
 }
@@ -270,6 +275,7 @@ p {
     background-position: right;
     background-attachment: scroll;
     background-size: cover;
+    background-position: left;
 }
 
 .text-topics {
@@ -566,7 +572,12 @@ p {
 
     .text-sistema {
         padding: 4rem;
-    }    
+    }
+    
+    #sistema .logo-java {
+        max-width: 100%;
+        width: 200px;
+    }
 }
 
 @media (min-width: 768px) {
