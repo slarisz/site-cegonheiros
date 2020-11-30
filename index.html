@@ -304,25 +304,25 @@
                     <h2 data-aos="fade-right"
                     data-aos-delay="200"
                     data-aos-duration="1000">Fale conosco</h2>
-                    <form id="contato-form" data-aos="fade-right"
+                    <form id="contato-form" name="frmcontato" method="POST" action="form-contato.php" data-aos="fade-right"
                     data-aos-delay="400"
                     data-aos-duration="1000">
                         <div class="form-row">
                           <div class="form-group col-12">
-                            <input type="name" class="form-control" id="name_form" placeholder="Nome Completo">
+                            <input type="text" name="nome" class="form-control" id="name_form" placeholder="Nome Completo">
                           </div>
                           <div class="form-group col-12">
-                            <input type="tel" class="form-control" id="tel_form" placeholder="Telefone">
+                            <input type="text" name="phone" class="form-control" id="tel_form" placeholder="Telefone">
                           </div>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="email_form" placeholder="Email">
+                            <input type="email" name="email" class="form-control" id="email_form" placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <textarea class="col-12" name="" id="message" rows="5"  placeholder="Mensagem"></textarea>
+                            <textarea class="col-12" name="mensagem" id="message" rows="5"  placeholder="Mensagem"></textarea>
                         </div>
                         
-                        <button type="submit" class="btn btn-primary"><h4>ENVIAR</h4></button>
+                        <button type="submit" onclick="return vldForm()" class="btn btn-primary"><h4>ENVIAR</h4></button>
                     </form>
                 </div>
                 <div class="col-md-6">
@@ -411,6 +411,39 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+
+        function vldForm() {
+
+            var nome = frmcontato.nome.value;
+            var phone = frmcontato.phone.value;
+            var email = frmcontato.email.value;
+            var mensagem = frmcontato.mensagem.value;
+
+            if(nome == "" || nome == null || nome.length < 3) {
+                alert('Por favor, informe o seu Nome Completo');
+                frmcontato.nome.focus();
+                return false
+            }
+
+            if(phone == "" || phone == null || phone.length < 11) {
+                alert('Por favor, informe o seu Telefone/Celular');
+                frmcontato.phone.focus();
+                return false
+            }
+
+            if(email == "" || email == null || email.indexOf('@') == -1 || email.indexOf('.com') == -1) {
+                alert('Por favor, informe um Email válido');
+                frmcontato.email.focus();
+                return false
+            }
+
+            if(mensagem == "" || mensagem == null) {
+                alert('Por favor, escreva a mensagem que será enviada');
+                frmcontato.mansagem.focus();
+                return false
+            }
+
+        }
 
         
     </script>
