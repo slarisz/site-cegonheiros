@@ -208,6 +208,7 @@ p {
     z-index: 10;
     position: relative;
     text-align: center;
+    overflow: hidden;
 }
 
 #quem-somos img {
@@ -223,6 +224,80 @@ p {
 #quem-somos p{
     text-align: initial;  
 }
+
+/* videos */
+
+#videos {
+    padding: 0rem 0rem 8rem;
+}
+
+#videos h2 {
+    color: #AD181D;
+}
+
+.video-size {
+    max-width: 80%;
+}
+
+.lista-videos {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+#custCarousel .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#custCarousel .carousel-inner img {
+    width: 100%;
+}
+
+#custCarousel .carousel-indicators {
+    position: static;
+    margin-top: 20px
+}
+
+#custCarousel .carousel-indicators>li {
+    width: 100px
+}
+
+#custCarousel .carousel-indicators li img {
+    display: block;
+    opacity: 0.5
+}
+
+#custCarousel .carousel-indicators li.active img {
+    opacity: 1
+}
+
+#custCarousel .carousel-indicators li:hover img {
+    opacity: 0.75
+}
+
+#custCarousel .carousel-item img {
+    width: 80%
+}
+
+#custCarousel .fa.fa-chevron-left {
+    color: #222;
+    font-size: 2rem;
+    position: relative;
+    right: 10px;
+    top: -10px;
+}
+
+#custCarousel .fa.fa-chevron-right {
+    color: #222;
+    font-size: 2rem;
+    position: relative;
+    left: 10px;
+    top: -10px;
+}
+
+
 
 /* sistema */
 
@@ -251,6 +326,8 @@ p {
 
 .text-sistema {
     padding: 3rem 2rem;
+    overflow: hidden;
+    position: relative;
 }
 
 #sistema .java-type {
@@ -504,7 +581,7 @@ p {
     }
 
     #nav-bar-dk .navbar-nav {
-        margin-left: 5%;
+        margin-left: initial;
     }
 
     #nav-bar-dk .navbar-nav li {
