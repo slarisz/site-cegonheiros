@@ -209,11 +209,12 @@ p {
     position: relative;
     text-align: center;
     overflow: hidden;
+    padding: 5rem 0rem;
+    box-shadow: 1px 5px 10px #000000b3;
 }
 
 #quem-somos img {
     max-width: 100%;
-    margin-bottom: 2rem;
     width: 80%;
 }
 
@@ -228,74 +229,35 @@ p {
 /* videos */
 
 #videos {
-    padding: 0rem 0rem 8rem;
+    padding: 5rem 0rem 6rem;
+    background-color: #460002;
 }
 
-#videos h2 {
-    color: #AD181D;
-}
-
-.video-size {
-    max-width: 80%;
-}
-
-.lista-videos {
-    width: 80%;
+#videos .carousel-galeria {
+    width: 75%;
     margin: 0 auto;
-    padding: 5rem 0;
 }
 
-#custCarousel .carousel-inner {
-    position: relative;
+#carousel-galeria .carousel-inner {
+    width: 75%;
+    margin: 0 auto;
+}
+
+#carousel-galeria .carousel-indicators {
+    bottom: -50px;
+}
+
+#carousel-galeria video {
     width: 100%;
-    overflow: hidden;
 }
 
-#custCarousel .carousel-inner img {
-    width: 100%;
-}
-
-#custCarousel .carousel-indicators {
-    position: static;
-    margin-top: 20px
-}
-
-#custCarousel .carousel-indicators>li {
-    width: 100px
-}
-
-#custCarousel .carousel-indicators li img {
+.img-carousel img {
+    max-width: 800px;
+    margin: 0 auto;
     display: block;
-    opacity: 0.5
+    width: 100%;
 }
 
-#custCarousel .carousel-indicators li.active img {
-    opacity: 1
-}
-
-#custCarousel .carousel-indicators li:hover img {
-    opacity: 0.75
-}
-
-#custCarousel .carousel-item img {
-    width: 80%
-}
-
-#custCarousel .fa.fa-chevron-left {
-    color: #222;
-    font-size: 2rem;
-    position: relative;
-    right: 10px;
-    top: -10px;
-}
-
-#custCarousel .fa.fa-chevron-right {
-    color: #222;
-    font-size: 2rem;
-    position: relative;
-    left: 10px;
-    top: -10px;
-}
 
 
 
@@ -313,6 +275,11 @@ p {
 
 #sistema img {
     max-width: 100%;
+    width: 100%;
+}
+
+#sistema .icon-top {
+    width: 50px;
 }
 
 #sistema .logo-java {
@@ -585,7 +552,7 @@ p {
     }
 
     #nav-bar-dk .navbar-nav li {
-        padding: 0rem 0.5rem 1rem;
+        padding: 0rem 0.5rem;
     }
 
     #nav-bar-dk .navbar-nav li h5, #nav-bar-dk .navbar-nav li a{
@@ -662,6 +629,10 @@ p {
         max-width: 100%;
         width: 200px;
     }
+
+    #carousel-galeria .carousel-inner {
+        height: 470px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -690,6 +661,9 @@ p {
     }
     #menu-web .navbar-brand img {
         width: 75%;
+    }
+    #quem-somos img {
+        margin-bottom: 4rem;
     }
 }
 
