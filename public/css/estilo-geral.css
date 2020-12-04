@@ -171,6 +171,7 @@ p {
     margin: 0 15%;
 }
 
+
 /* blocos vantagens */
 
 #top-blocks {
@@ -664,6 +665,16 @@ p {
     }
     #quem-somos img {
         margin-bottom: 4rem;
+    }
+
+    #carousel-galeria .carousel-inner {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #carousel-galeria .carousel-control-next, #carousel-galeria .carousel-control-prev {
+        top: auto;
+        bottom: -40px;
     }
 }
 
