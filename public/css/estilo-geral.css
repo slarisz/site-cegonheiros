@@ -64,6 +64,11 @@ p {
     padding: 0rem 1rem;
 }
 
+#client-menu .fa.fa-caret-down {
+    margin-left: 1rem;
+    margin-top: 3px;
+}
+
 #client-menu .fa-user-circle {
     font-size: 1.5rem;
     margin-right: 0.5rem;
@@ -211,7 +216,7 @@ p {
     text-align: center;
     overflow: hidden;
     padding: 5rem 0rem;
-    box-shadow: 1px 5px 10px #000000b3;
+    box-shadow: 1px 5px 10px #00000085;
 }
 
 #quem-somos img {
