@@ -11,6 +11,21 @@ p {
     font-weight: lighter;
 }
 
+.btn-white {
+   background-color: #222;
+   border: 1px solid!important;
+   color: #fff;
+   transition: 0.2s all!important;
+   border-radius: 3px!important;
+}
+
+.btn-white:hover {
+    background-color: #fff;
+    color: #222!important;
+    transition: 0.3s all!important;
+    border-radius: 3px!important;
+ }
+
 /* HEADER */
 
 #header-menu a {
@@ -237,6 +252,11 @@ p {
 #videos {
     padding: 5rem 0rem 6rem;
     background-color: #460002;
+    background-image: linear-gradient(-90deg, rgba(49, 0, 1, 0.57), rgba(70, 0, 2, 0.9)), url('../img/bg-sol.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 #videos .carousel-galeria {
@@ -500,10 +520,11 @@ p {
     }
 
     .about-blocks {
-        height: 260px;
+        height: auto;
         position: relative;
         margin-top: -100px;
         margin-bottom: 0rem;
+        min-height: 290px;
     }
 
     #carousel-slide .carousel-indicators {
