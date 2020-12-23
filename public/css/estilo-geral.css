@@ -11,6 +11,14 @@ p {
     font-weight: lighter;
 }
 
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px !important;
+    height: 12px !important;
+    cursor: pointer;
+    margin: 0 0.5rem !important;
+}
+
 .btn-white {
    background-color: #222;
    border: 1px solid!important;
@@ -24,6 +32,7 @@ p {
     color: #222!important;
     transition: 0.3s all!important;
     border-radius: 3px!important;
+    
  }
 
 /* HEADER */
@@ -451,8 +460,12 @@ p {
 }
 
 .icons-contato h3 {
-    margin: 1rem 0rem 3rem;
-    font-size: clamp(1.1rem, 2vw, 1.8rem);
+    margin: 1rem 0rem 1.5rem;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+}
+
+#html5lightbox-watermark {
+    display: none!important;
 }
 
 /* rodape */
