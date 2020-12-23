@@ -152,7 +152,7 @@ p {
     text-indent: 0.9em;
     font-family: inherit;
     transition: 0.3s all;
-    padding: 0.6rem 1.2rem 0.6rem 0.6rem;
+    padding: 0.6rem 1.3rem 0.6rem 0.6rem;
 }
 
 .login-client .btn-login:hover {
