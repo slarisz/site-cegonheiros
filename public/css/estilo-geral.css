@@ -722,6 +722,9 @@ p {
         margin: 0px;
         width: 75%;
     }
+    #videos {
+    background-position: 80%;
+    }
 }
 
 @media (max-width: 350px) {    
